@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1616454036",layout:"default",error:a,state:{app:{},pages:{items:a,offset:0,limit:10,api:{location:"http:\u002F\u002Froniursu\u002Fapi\u002F"}}},serverRendered:true,routePath:"\u002Finspire",config:{}}}(null));

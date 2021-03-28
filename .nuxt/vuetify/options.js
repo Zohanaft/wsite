@@ -1,0 +1,1 @@
+export default {"breakpoint":{"thresholds":{"xs":340,"sm":540,"md":830,"lg":1200},"scrollBarWidth":0},"theme":{"light":true,"themes":{"light":{"primary":"#fff","accent":"#00D1FF","secondary":{"base":"#0F0F0F","darken1":"#000"},"info":{"base":"#444444","lighten1":"#E5E5E5"}}}}}

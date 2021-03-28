@@ -12,6 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
+        "pallares/laravel-nuxt": "^1.5",
         "pvtl/voyager-pages": "^0.2.13",
         "tcg/voyager": "1.3"
     },

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "expirience",
+    "path": "/expirience",
+    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\expirience.vue",
+    "chunkName": "pages/expirience",
+    "_name": "_9bfc0024"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_11cb78ec"
+  },
+  {
+    "name": "notes",
+    "path": "/notes",
+    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\notes.vue",
+    "chunkName": "pages/notes",
+    "_name": "_d0048c1e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_06adb8fc"
+  },
+  {
+    "path": "/:page",
+    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\_page.vue",
+    "chunkName": "pages/_page",
+    "children": [
+      {
+        "name": "page",
+        "path": "",
+        "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\page\\\\index.vue",
+        "chunkName": "pages/page/index",
+        "_name": "_1636d7da"
+      }
+    ],
+    "_name": "_656a681e"
+  },
+  {
+    "name": "__laravel_nuxt__",
+    "path": "/__laravel_nuxt__",
+    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_06adb8fc"
+  }
+]
