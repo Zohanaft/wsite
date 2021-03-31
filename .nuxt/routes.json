@@ -2,51 +2,44 @@
   {
     "name": "expirience",
     "path": "/expirience",
-    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\expirience.vue",
+    "component": "C:\\\\openserver\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\expirience.vue",
     "chunkName": "pages/expirience",
-    "_name": "_9bfc0024"
+    "_name": "_d7ba1fa4"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\inspire.vue",
+    "component": "C:\\\\openserver\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\inspire.vue",
     "chunkName": "pages/inspire",
-    "_name": "_11cb78ec"
+    "_name": "_764d896c"
   },
   {
     "name": "notes",
     "path": "/notes",
-    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\notes.vue",
+    "component": "C:\\\\openserver\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\notes.vue",
     "chunkName": "pages/notes",
-    "_name": "_d0048c1e"
+    "_name": "_2497a1b1"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\index.vue",
+    "component": "C:\\\\openserver\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_06adb8fc"
+    "_name": "_ed79e97c"
   },
   {
     "path": "/:page",
-    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\_page.vue",
+    "component": "C:\\\\openserver\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\_page.vue",
     "chunkName": "pages/_page",
     "children": [
       {
         "name": "page",
         "path": "",
-        "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\page\\\\index.vue",
+        "component": "C:\\\\openserver\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\page\\\\index.vue",
         "chunkName": "pages/page/index",
-        "_name": "_1636d7da"
+        "_name": "_56e1abd3"
       }
     ],
-    "_name": "_656a681e"
-  },
-  {
-    "name": "__laravel_nuxt__",
-    "path": "/__laravel_nuxt__",
-    "component": "C:\\\\OpenServer\\\\domains\\\\roniursu\\\\resources\\\\nuxt\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_06adb8fc"
+    "_name": "_1bf76044"
   }
 ]

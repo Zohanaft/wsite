@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _9bfc0024 = () => interopDefault(import('..\\resources\\nuxt\\pages\\expirience.vue' /* webpackChunkName: "pages/expirience" */))
-const _11cb78ec = () => interopDefault(import('..\\resources\\nuxt\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _d0048c1e = () => interopDefault(import('..\\resources\\nuxt\\pages\\notes.vue' /* webpackChunkName: "pages/notes" */))
-const _06adb8fc = () => interopDefault(import('..\\resources\\nuxt\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _656a681e = () => interopDefault(import('..\\resources\\nuxt\\pages\\_page.vue' /* webpackChunkName: "pages/_page" */))
-const _1636d7da = () => interopDefault(import('..\\resources\\nuxt\\pages\\page\\index.vue' /* webpackChunkName: "pages/page/index" */))
+const _d7ba1fa4 = () => interopDefault(import('..\\resources\\nuxt\\pages\\expirience.vue' /* webpackChunkName: "pages/expirience" */))
+const _764d896c = () => interopDefault(import('..\\resources\\nuxt\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _2497a1b1 = () => interopDefault(import('..\\resources\\nuxt\\pages\\notes.vue' /* webpackChunkName: "pages/notes" */))
+const _ed79e97c = () => interopDefault(import('..\\resources\\nuxt\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _1bf76044 = () => interopDefault(import('..\\resources\\nuxt\\pages\\_page.vue' /* webpackChunkName: "pages/_page" */))
+const _56e1abd3 = () => interopDefault(import('..\\resources\\nuxt\\pages\\page\\index.vue' /* webpackChunkName: "pages/page/index" */))
 
 const emptyFn = () => {}
 
@@ -24,32 +24,28 @@ export const routerOptions = {
 
   routes: [{
     path: "/expirience",
-    component: _9bfc0024,
+    component: _d7ba1fa4,
     name: "expirience"
   }, {
     path: "/inspire",
-    component: _11cb78ec,
+    component: _764d896c,
     name: "inspire"
   }, {
     path: "/notes",
-    component: _d0048c1e,
+    component: _2497a1b1,
     name: "notes"
   }, {
     path: "/",
-    component: _06adb8fc,
+    component: _ed79e97c,
     name: "index"
   }, {
     path: "/:page",
-    component: _656a681e,
+    component: _1bf76044,
     children: [{
       path: "",
-      component: _1636d7da,
+      component: _56e1abd3,
       name: "page"
     }]
-  }, {
-    path: "/__laravel_nuxt__",
-    component: _06adb8fc,
-    name: "__laravel_nuxt__"
   }],
 
   fallback: false
