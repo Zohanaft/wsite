@@ -54,4 +54,10 @@ class Pages extends Model
     public function getFieldset() {
         return $this->fillable;
     }
+
+    public function tags()
+    {   
+
+        return $this->belongsToMany('App\Tag', 'page_tag');
+    }
 }
