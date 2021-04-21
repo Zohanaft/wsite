@@ -5,14 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class PageType extends Model
+class TagGroup extends Model
 {
+    protected $fillable  = ['title', 'tags', 'visible', 'view'];
+
     public function save(array $options = [])
     {
-        if (empty($this->slug)) {
-            $this-> = str_slug($this->title);
-        }
-
+        $this->attributes = $options;
         parent::save();
     }
 }

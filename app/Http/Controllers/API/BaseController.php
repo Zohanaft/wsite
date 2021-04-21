@@ -101,7 +101,9 @@ class BaseController extends Controller
 
     $items = DB::select($this->queryStart . $this->queryConditions . $this->queryEnd);
     foreach ($items as $val) {
-      $val->image = asset('storage/' . $val->image);
+      if (isset($val->image)) {
+        $val->image = asset('storage/' . $val->image);
+      }
     }
     return $items;
   }
