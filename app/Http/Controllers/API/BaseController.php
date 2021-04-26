@@ -22,17 +22,27 @@ class BaseController extends Controller
     $fieldset = $model->getFieldset();
 
     foreach ($query as $key => $val) {
+      
       /**
        * sort __sort
        */
       if (preg_match('/__sort/', $key)) {
         $params = explode(',', $val);
-        $this->queryStart = 'SELECT ';
+        if (!$this->queryStart)
+          $this->queryStart = 'SELECT ';
         
         foreach ($params as $param) {
           $this->queryStart .= strval($param) . ',';
         }
+
         $this->queryStart = preg_replace('/,$/', '', $this->queryStart) . ' FROM ' . $model->tabName;
+      }
+
+      /**
+       * __unique
+       */
+      if (preg_match('/__unique/', $key)) {
+        $this->queryStart = preg_replace('/SELECT/', 'SELECT DISTINCT', $this->queryStart);
       }
 
       /**
@@ -43,6 +53,7 @@ class BaseController extends Controller
        */
       else if (preg_match('/__gte$/', $key)) {
         $param = preg_replace('/__gte$/', '', $key);
+
         if ($model->dbFieldTypes[$param] !== 'timestamp') {
           $this->queryConditions .= 'AND ' . $param . '>' . $val . '';
         }
@@ -62,7 +73,13 @@ class BaseController extends Controller
 
       else if (preg_match('/__like$/', $key)) {
         $param = preg_replace('/__like$/', '', $key);
-        $this->queryConditions .= 'AND ' . $param . ' LIKE ' . "'%" . $val . "%' ";
+
+        $vals = explode(',',$val);
+
+        foreach ($vals as $v) {
+          $this->queryConditions .= 'AND ' . $param . ' LIKE ' . "'%" . $v . "%' ";
+        }
+
       }
 
       else if (preg_match('/__limit$/', $key)) {

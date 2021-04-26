@@ -149,7 +149,7 @@ class Page extends Model
       }
 
       $groups = implode(',', $groupNames);
-      DB::update("UPDATE pages SET collections = ? WHERE id = ?", [$groups, $this->id]);
+      $this->attributes['collections'] = $groups;
     }
   }
 
@@ -197,7 +197,7 @@ class Page extends Model
         array_push($tagNames,$tag[0]->title);
       }
       $tags = implode(',', $tagNames);
-      DB::update("UPDATE pages SET tags = ? WHERE id = ?", [$tags, $this->id]);
+      $this->attributes['tags'] = $tags;
     }
   }
 
